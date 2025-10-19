@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(232, 231, 231);
+    background: url("./images/bg-desktop.svg"), rgb(103, 75, 175);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding: 2.5rem;
+}
+
+.logo {
+    margin-bottom: 2.5rem;
+}
+
+.main-content {
+    display: flex;
+}
+
+.mockup > img {
+}
+
+.content {
+    padding: 2.5rem;
+}
+
+.heading {
+    color: white;
+    font-weight: "Poppins";
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.message {
+    margin-bottom: 1.5rem;
+}
+
+.content > button {
+    font-size: 1rem;
+    color: rgb(103, 75, 175);
+    background-color: white;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 32px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out,
+                color 0.15s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(232, 130, 232);
+    color: rgb(231, 231, 231);
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.social-media-links > a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.social-media-links > a:hover {
+    transform: translateY(-10%);
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    font-size: 11px;
+    text-align: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ @media screen and (max-width: 390px){
+    body {
+        background: url("images/bg-mobile.svg"), rgb(103, 75, 175);
+        max-width: 375px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .main-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mockup > img {
+        width: 300px;
+    }
+    .social-media-links {
+        display: flex;
+        justify-content: center;
+    }
+ }
