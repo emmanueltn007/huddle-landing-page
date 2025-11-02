@@ -94,7 +94,6 @@ button:hover {
  @media screen and (max-width: 390px){
     body {
         background: url("images/bg-mobile.svg"), rgb(103, 75, 175);
-        max-width: 375px;
     }
 
     .logo {
@@ -109,6 +108,18 @@ button:hover {
 
     .mockup > img {
         width: 300px;
+    }
+
+    .content > .heading {
+        font-size: 1.25rem;
+    }
+
+    .content > .message {
+        font-size: 0.75rem;
+    }
+
+    .content > button {
+        width: 80%;
     }
     .social-media-links {
         display: flex;
